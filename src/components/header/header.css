@@ -1,0 +1,32 @@
+.cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    background-color: darkslategray;
+    height: 85px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 140vh;
+
+}
+
+.logo-img{
+    width: 190px;
+    
+}
+
+.redirect {
+    margin-right: 30vh;
+    display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 80px;
+    color: white;
+    
+
+}
