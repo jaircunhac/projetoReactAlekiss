@@ -1,0 +1,28 @@
+.container {
+    color: white;
+    text-align: center;
+     
+}
+
+button {
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #666;
+  }
+  
+  .boss-info {
+    margin-top: 20px;
+  }
+  
+  .boss-info img {
+    margin-top: 10px;
+    border-radius: 10px;
+  }

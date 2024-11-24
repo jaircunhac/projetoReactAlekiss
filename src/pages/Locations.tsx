@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
-import './Locations.css'
+import './Style.css'
 
 const Locations = () => {
   const [locations, setLocations] = useState<any[]>([])
