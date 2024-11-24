@@ -27,7 +27,6 @@ const Bosses = () => {
             <img
               src={boss.image}
               alt={boss.name}
-              style={{ width: "200px", height: "auto" }}
             />
           )}
         </div>
