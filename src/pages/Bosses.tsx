@@ -8,7 +8,7 @@ const Bosses = () => {
 
   const fetchRandomBoss = () => {
     axios
-      .get("https://eldenring.fanapis.com/api/bosses?limit=70")
+      .get("https://eldenring.fanapis.com/api/bosses?limit=720")
       .then((response) => {const bosses = response.data.data
         const randomBoss = bosses[Math.floor(Math.random() * bosses.length)]
         setBoss(randomBoss)})
@@ -23,12 +23,7 @@ const Bosses = () => {
         <div className="boss-info">
           <h2>{boss.name}</h2>
           <p>{boss.description}</p>
-          {boss.image && (
-            <img
-              src={boss.image}
-              alt={boss.name}
-            />
-          )}
+          {boss.image && (<img src={boss.image} alt={boss.name}/>)}
         </div>
       )}
     </div>

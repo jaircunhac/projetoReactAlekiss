@@ -7,7 +7,7 @@ const Locations = () => {
 
   const fetchLocations = () => {
     axios
-      .get("https://eldenring.fanapis.com/api/locations")
+      .get("https://eldenring.fanapis.com/api/locations?limit=70")
       .then((response) => {setLocations(response.data.data)})
     }
 
@@ -22,11 +22,8 @@ const Locations = () => {
             <div key={index} className="location-card">
               <h2>{location.name}</h2>
               <p>{location.description}</p>
-                <img
-                  src={location.image}
-                  alt={location.name}
-                  style={{ width: "400px", height: "400px", paddingBottom: "80px" }}
-                />
+                <img src={location.image} alt={location.name} 
+                style={{ width: "400px", height: "400px", paddingBottom: "80px" }}/>
             </div>
           ))}
         </div>

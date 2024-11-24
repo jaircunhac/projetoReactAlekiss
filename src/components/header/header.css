@@ -12,12 +12,10 @@
 .logo {
     width: 50px;
     margin-right: 140vh;
-
 }
 
 .logo-img{
     width: 190px;
-    
 }
 
 .redirect {
@@ -25,8 +23,6 @@
     display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        gap: 80px;
+        gap: 50px;
     color: white;
-    
-
 }

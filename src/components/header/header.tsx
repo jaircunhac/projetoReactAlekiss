@@ -18,8 +18,6 @@ export const Header = () =>{
                 <Link to='/bosses' style={{ color: 'white' , textDecoration: 'none' }} >
                     <h2>Bosses</h2>
                 </Link>
-
-
             </div>
         </header>
     )
