@@ -16,14 +16,36 @@ const Bosses = () => {
 
   return (
     <div className="container">
-      <h1>Boss Aleatório de Elden Ring</h1>
-      <button onClick={fetchRandomBoss}>Mostrar um sofrimento aleatório</button>
+      <h1 className="boss-title">Boss Aleatório de Elden Ring</h1>
+      <button 
+        className="boss-button" 
+        onClick={fetchRandomBoss}
+      >
+        Mostrar um sofrimento aleatório
+      </button>
       
       {boss && (
         <div className="boss-info">
-          <h2>{boss.name}</h2>
-          <p>{boss.description}</p>
-          {boss.image && (<img src={boss.image} alt={boss.name}/>)}
+          <h2 className="boss-name">{boss.name}</h2>
+          <div className="boss-description">
+            {boss.description
+              ? boss.description.split('. ').map((paragraph: string, i: number) => (
+                  paragraph && (
+                    <p key={i} className="description-paragraph">
+                      {paragraph}{i < boss.description.split('. ').length - 1 ? '.' : ''}
+                    </p>
+                  )
+                ))
+              : <p className="description-paragraph">No description available.</p>
+            }
+          </div>
+          {boss.image && (
+            <img 
+              src={boss.image} 
+              alt={boss.name}
+              className="boss-image"
+            />
+          )}
         </div>
       )}
     </div>
