@@ -70,8 +70,12 @@
 }
 
 .boss-info {
-  margin-top: 20px;
+  max-width: 800px;
+  margin: 20px auto;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .boss-name {
@@ -79,25 +83,22 @@
   font-size: 28px;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  width: 100%;
 }
 
 .boss-description {
-  margin: 15px 20px 25px 20px;
+  width: 100%;
+  margin: 15px 0 25px 0;
   color: #e0e0e0;
-}
-
-.description-paragraph {
-  margin-bottom: 15px;
-  line-height: 1.6;
-  font-size: 17px;
 }
 
 .boss-image {
   width: 100%;
+  max-width: 600px;
   height: 400px;
-  object-fit: cover;
-  margin-top: 20px;
-  padding-bottom: 80px;
+  object-fit: contain;
+  margin: 20px auto;
+  border-radius: 8px;
 }
 
 button {
