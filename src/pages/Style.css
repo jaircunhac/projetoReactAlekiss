@@ -78,12 +78,13 @@
 }
 
 .boss-info {
-    background: rgba(255, 255, 255, 0.1);  /* Subtle white background */
-    backdrop-filter: blur(10px);  /* Glass effect */
-    -webkit-backdrop-filter: blur(10px);  /* For Safari support */
+    
+    backdrop-filter: blur(10px);  
+    -webkit-backdrop-filter: blur(10px);  
     border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.2);  /* Subtle border */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  /* Soft shadow */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(0,0,0,.7); 
+    box-shadow: 0 0 10px (0, 0, 0, 2);
     max-width: 800px;
     margin: 20px auto;
     padding: 30px;
@@ -176,7 +177,7 @@ button {
 }
 
 .boss-button {
-    background: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0,0,0,.7);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 8px;
