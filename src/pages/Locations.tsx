@@ -15,14 +15,21 @@ const Locations = () => {
 
   return (
     <div className="container">
-      <h1>Locais de Elden Ring</h1>
+      <h1 className='location-title' >Locais de Elden Ring</h1>
       {locations.length > 0 ? (
         <div className="locations-list">
           {locations.map((location, index) => (
             <div key={index} className="location-card">
-              <h2>{location.name}</h2>
-              <p>{location.description}</p>
-                <img src={location.image} alt={location.name} 
+              <h2 className="location-name">{location.name}</h2>
+              <div className="location-description">
+                {location.description
+                  ? location.description.split('. ').map((paragraph: string, i: number) => (
+                      paragraph && <p key={i} className="description-paragraph">{paragraph}{i < location.description.split('. ').length - 1 ? '.' : ''}</p>
+                    ))
+                  : <p className="description-paragraph">No description available.</p>
+                }
+              </div>
+              <img src={location.image} alt={location.name} className="location-card-image"
                 style={{ width: "400px", height: "400px", paddingBottom: "80px" }}/>
             </div>
           ))}

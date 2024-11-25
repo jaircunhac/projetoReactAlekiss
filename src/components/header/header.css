@@ -16,13 +16,14 @@
 
 .logo-img{
     width: 190px;
+    margin-left: 20vh;
 }
 
 .redirect {
     margin-right: 30vh;
     display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        gap: 50px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
     color: white;
 }
